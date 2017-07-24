@@ -80,19 +80,22 @@ h1 {
 }
 .btn {
   height: 100%;
-  width: 10%;
+  width: 50%;
   font-size: 45px;
-  line-height:700px;
-
+  line-height:100vh;
+  cursor:pointer;
   top: 0;
 
 }
 .right {
   float: right;
   padding: 40px;
+  text-align: right;
 }
 .left {
   float: left;
   padding: 40px;
 }
-
+.hide {
+  display: none;
+}

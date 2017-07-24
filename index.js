@@ -8,8 +8,7 @@ $(document).ready(function () {
 
     // we create a jQuery list element for the page
     var $ul = $('<ul id="pager"></ul>');
-     var next = $('<div class="btn right">&Gt;</div>');
-     var back = $('<div class="btn left">&Lt;</div>');
+
     // for each items in the array
     // for (var index = 0; index < array.length; index++) {}
     array.forEach(function(item, index) {
@@ -17,29 +16,43 @@ $(document).ready(function () {
       var $li = $('<li>' + (index + 1) + '</li>');
 
       $li.on('click', function() {
+        if (index === (array.length-1)) {
+          $('.right').addClass('hide');
+          $('.left').removeClass('hide');
+        }else if (index === 0) {
+          $('.left').addClass('hide');
+          $('.right').removeClass('hide');
+        }else {
+          $('.right').removeClass('hide');
+          $('.left').removeClass('hide');
+        }
         $h1.text(item.title);
         $body.css('background-image', 'url('+item.src+')');
         $link
           .text('Photos by ' + item.author)
-          .attr('href', item.link)
-          $('li').removeClass("active");
-          $(this).addClass("active");
+          .attr('href', item.link);
+        $('li').removeClass("active");
+        $(this).addClass("active");
       });
 
       // that we add to the list ($ul)
       $ul.append($li);
     });
-    $('.btn').on('click', function () {
+   
+    $('.right').on('click', function() {
       var $liactive = $('li.active');
       var $linext = $liactive.next();
       $linext.trigger('click');
+     
+
     });
-    $('.btn').on('click', function () {
+   
+    $('.left').on('click', function() {
       var $liactive = $('li.active');
       var $liback = $liactive.prev();
       $liback.trigger('click');
     });
 
-    $('body').append($h1, $ul, $link, next, back,)
+    $('body').append( $h1, $ul, $link);
   });
 });
