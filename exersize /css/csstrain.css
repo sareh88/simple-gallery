@@ -1,0 +1,9 @@
+input {
+	margin: auto;
+}
+[type] {
+	border:1px solid gold;
+}
+[type="search"]{
+	border:1px solid black;
+}

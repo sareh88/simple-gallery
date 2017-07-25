@@ -1,0 +1,35 @@
+/*img {
+ width: 300px;
+ float: left;
+
+ display: inline;
+
+}*/
+.color {
+	background-color: green;
+}
+.bgimage {
+	background-image: url(image5.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+}
+.logo {
+	text-align: center;
+
+}
+.footer {
+	background-color: lightgray;
+	text-align: center;
+}
+img {
+	height: 136px !important;
+	width: 256px;
+}
+.media img {
+	margin-bottom: 10px;
+}
+.row {
+	border: 1px solid black;
+	padding: 2px;
+}

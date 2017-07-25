@@ -1,0 +1,156 @@
+
+/*  *{
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+-------------------------------*/
+/* global styl*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+
+
+}
+a {
+	color: #ef233c;
+}
+a:hover {
+	text-decoration: none;
+}
+h1, h2 {
+	font-family: 'Caveat', cursive;
+	font-weight: 400;
+}
+h2 {
+	font-size: 40px;
+}
+h1 {
+	font-size: 80px;
+}
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 60px 30px;
+}
+
+.btn {
+	background: red;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 25px;
+
+}
+/* header and footer
+-------------------------------*/
+header, footer {
+	background: #282d42;
+	color: #8099ae;
+	
+}
+/*header*/
+header {
+	position: relative;
+}
+header h1, header h2 {
+	color: white;
+	
+}
+.profile-img {
+	
+	border-radius: 50%;
+	
+}
+.download {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+/*nav*/
+nav {
+	text-align: center;
+	position: fixed;
+	width: 100% ;
+	background:rgba(211,211,211,0.3);
+
+    
+}
+
+nav a {
+	display: inline-block;
+	margin: 15px 10px;
+	text-transform: uppercase;
+	text-decoration:none;
+	color: black;
+
+}
+        /*footer*/
+ footer {
+	text-align: center;
+}
+.contact-info a {
+ background: white;
+ margin: 5px;
+ padding: 10px;
+ display: inline-block;
+}
+
+
+
+
+/* work experience
+-------------------------------*/
+.work {
+	background:  #809fff;
+  
+}
+
+
+
+
+
+
+
+
+
+/* education
+-------------------------------*/
+.education {
+	background:linear-gradient(rgba(141,153,174,0.8),rgba(141,153,174,0.5)),
+    url(../image/image11.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+/*media query*/
+@media (min-width: 900px) {
+		     .col-wide {
+			width: 70%;
+			float: left;
+			padding-left: 20px;
+		 }
+		.col-narrow {
+			width: 30%;
+			float: left;
+			margin-top: 40px;
+		}
+}
+@media (max-width: 899px) {
+ header {
+ 	text-align: center;
+ }
+ .profile-img {
+ 	width: 200px;
+ }
+}
