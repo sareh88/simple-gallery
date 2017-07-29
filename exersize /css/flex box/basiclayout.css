@@ -1,0 +1,42 @@
+html {
+	background-color:yellow; 
+}
+body {
+	background-color: white;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 2em;
+}
+header {
+	
+	height:100px; 
+	 
+	background-color: green;
+	margin-bottom: 1em;
+}
+nav {
+	background-color: blue;
+	height: 40px;
+	margin-bottom: 1em;
+}
+aside {
+	
+	width: 30%;
+	height: 200px;
+	float: left;
+	background-color: gray;
+}
+content {
+	position: relative;
+	width: 60%;
+	height: 200px;
+	float: right;
+	background-color: black;
+	margin-bottom: 1em;
+}
+footer {
+	clear: both;
+	background-color: green;
+	height: 100px;
+	margin-top: 1em;
+}

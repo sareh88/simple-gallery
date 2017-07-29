@@ -1,0 +1,61 @@
+/*........form styling....*/
+
+.search-form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+
+
+ /*........input styling....*/
+input[type="search"] {
+	flex: 2 0 100px;
+	box-sizing: border-box;
+	background-color: #f5f8fa;
+	overflow: hidden;
+	border:1px solid rgb(211,211,211);
+	border-radius: 21px;
+	padding: 8px 32px 8px 12px ;
+	font-size: 12px;
+	font:inherit;
+	text-decoration: none;
+	line-height: normal;
+	max-height: 3em;
+	cursor: pointer;
+
+
+}
+ /*........button styling....*/
+button[type="submit"] {
+	flex: 1 0 40px;
+	box-sizing: border-box;
+	background-color: #4AB3F4;
+	color: #fff;
+	font-size:14px;
+	line-height: 16px;
+	cursor: pointer;
+	border: 1px solid #1da1f2;
+	border-radius:100px;
+	padding: 4px 12px;
+	text-align: center;
+	font-weight: bold;
+}
+button[type="submit"]:hover {
+	background-color: #4d88ff;
+}
+
+@media (max-width: 450px) {
+	body {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+
+
+
+
+ 
