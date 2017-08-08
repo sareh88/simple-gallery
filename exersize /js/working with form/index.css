@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	max-width: 1200px;
+	height: 100px;
+	
+	text-align: center;
+}
+body {
+	font-weight: bold;
+	font-family: initial;
+
+}
+
+/*----------form------*/
+ .cart {
+ 	
+ 	max-width: 1600px;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	
+
+ }
+ .item {
+    padding-left: 10px;
+ 	width: 50%;
+ 
+ 	
+ }
+#summary {
+	
+	width: 52%;
+}
+
+ input[type="number"] {
+ 	width: 80px;
+ }
+ 
+ .group {
+ 	width: 21%;
+ }
+ #s-state:focus {
+ 	border: 3px solid red;
+ }
+ .button {
+ 	margin-top: 10px;
+ }
+ #text-estimate {
+ 	    width: 81px;
+ }
+ #results {
+ 	width: 500px;
+ 	padding-left: 10px;
+ 	border: 1px solid black;
+ 	text-align: center;
+ }
+ #txt-water {
+ 	margin-bottom: 10px;
+ }
+ /*----------aside------*/
+ .events {
+ 	max-width: 800px;
+
+ 	display: flex;
+ 	justify-content: space-between;
+ 	
+
+ }
+ .calander {
+ 	background-color: rgba(0,0,0,0.6);
+ 	width: 45%;
+ 	padding-left: 10px;
+ 	margin:15px 0 20px 10px;
+ 	color: white;
+ }
+ #clock {
+ 	width: 30%;
+ 	height: 100px;
+ 	background-color: rgba(0,0,0,0.6);
+ 	margin:15px 30px 0 0;
+ 	padding-left: 10px;
+ 	color: white;
+ 	
+ }
+.bgimage {
+	background-image: url(image7.jpg);
+	background-position: center;
+	background-size: cover;
+	
+}
+#map {
+        width: 50%;
+        height: 400px;
+        margin-left: 50px;
+        
+      }

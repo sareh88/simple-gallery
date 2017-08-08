@@ -11,7 +11,7 @@ var timerRunning = false;
 // Add  zero to the minute part and second part when its smaller than 10:
 function addZero(time) {
  if (time <= 9) {
- 	time = "0" + time ;
+ 	time = "0" + time;
   }
   return time; 
 
@@ -19,7 +19,7 @@ function addZero(time) {
 
 // Run a standard minute/second/hundredths timer:
 function runTimer() {
-   theTimer.innerHTML = addZero(timer[0]) + ":" + addZero(timer[1]) + ":" + timer[2] ;
+   theTimer.innerHTML = addZero(timer[0]) + ":" + addZero(timer[1]) + ":" + addZero(timer[2]);
    timer[3]++;
 
    //here we will do a math for a clock
@@ -59,13 +59,15 @@ function spellCheck() {
       //testWrapper.style.borderColor = "#65ccf3";
 	//}
 
-
+ let test = 0; // this test = 0; to make the timer run a gain after we delete some letter in the box and start a gain; 
 
 // Start the timer:
 function start() {
 	var textEnterdLength = testArea.value.length;
 	if (textEnterdLength === 0 && !timerRunning){
-	interval = setInterval(runTimer, 10);
+      timerRunning = true;
+	    interval = setInterval(runTimer, 10);
+      test++;
 	}
 	
 }

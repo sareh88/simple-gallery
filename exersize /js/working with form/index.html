@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EXAPLE TO DEAL WITH FORM IN JS </title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+   <header>
+   	  <h1> EXAPLE TO DEAL WITH FORM IN JS</h1>
+   </header>
+   <main>
+   	<div class="content">
+   		<section class="main-content">
+   			<form class="cart" id="cart-hplus">
+   				<div class="item">
+   				   <h2>H+ Basketball Sneakers</h2>
+   				   <p>Run faster, jump higher.</p>
+
+   				   <div class="info">
+   				   	<span>price: $90/pair</span>
+   				   </div>
+
+   				   <div class="order">
+   				   	<label for="txt-q-bball">Quantity desired:</label>
+   				   	<input type="number" min="0" id="txt-q-bball" size="3" placeholder="0">
+   				   </div>
+   				</div>
+
+   				<div class="item">
+   				   <h2>H+ Active Jersy</h2>
+   				   <p>Sweat harder, wick better.</p>
+
+   				   <div class="info">
+   				   	<span>price: $25/each</span>
+   				   </div>
+
+   				   <div class="order">
+   				   	<label for="txt-q-jersey">Quantity desired:</label>
+   				   	<input type="number" min="0" id="txt-q-jersey" size="3" placeholder="0">
+   				   </div>
+   				</div>
+
+   				<div class="item">
+   				   <h2>H+ Power Supplements</h2>
+   				   <p>Get healthier, get smarter.</p>
+
+   				   <div class="info">
+   				   	<span>price: $30/bottle</span>
+   				   </div>
+
+   				   <div class="order">
+   				   	<label for="txt-q-bball">Quantity desired:</label>
+   				   	<input type="number" min="0" id="txt-q-power" size="3" placeholder="0">
+   				   </div>
+   				</div>
+
+   				<div class="item">
+   				   <h2>H+ Minereal Water</h2>
+   				   <p>test shit, coool.</p>
+
+   				   <div class="info">
+   				   	<span>price: $4/botol</span>
+   				   </div>
+
+   				   <div class="order">
+   				   	<label for="txt-water">Quantity desired:</label>
+   				   	<input type="number" min="0" id="txt-water" size="3" placeholder="0">
+   				   </div>
+   				</div>
+
+   				<div id="summary">
+   				  <h2>Estimate order</h2>
+
+   				  <div class="group state">
+   				  	<label for="s-state">state (required)</label>
+   				  	<select id="s-state" required>
+   				  	   <option value="">- select -</option>
+   				  	   <option value="CA">California (7.5% tax)</option>
+   				  	   <option value="WA">Washington (6.5% tax)</option>
+   				  	   <option value="IL">Illinois</option>
+   				  	   <option value="NH">New Hampshire</option>
+   				  	   <option value="PA">pennsylvania</option>
+   				  		
+   				  	</select>
+   				  </div>
+   				</div><br>
+
+   				<div class="group method">
+   					<label for="r-method-pickup">Shipping and handling</label><br>
+   					<input type="radio" value="pickup" name="r-method" id="r-method-pickup"> <label for="r-method-pickup">pickup (free)</label><br>
+   					
+   					<input type="radio" value="usps" name="r-method" id="r-method-pickup"> <label for="r-method-pickup">US mail (2$/item)</label><br>
+   					
+   					<input type="radio" value="ups" name="r-method" id="r-method-pickup"> <label for="r-method-pickup">UPS ($3/item)</label><br>
+   					
+   				</div>
+   				<div class="group">
+   					<label>special:</label>
+   					<br>
+   					<input type="checkbox" name="c-special-gift" value="yes" id="c-special-gift">
+   					<label for="c-special-gift">this is a gift</label>
+   					<br>
+   					<input type="checkbox" name="c-special-email" value="yes" id="c-special-email">
+   					<label for="c-special-email">sign up fora gift</label>
+   					<br>
+   				</div>
+
+   				<div class="group">
+   				  <p>
+   					<label for="btn-estimate">Click to estimate:</label>
+   					<br>
+   					<input type="submit" value="Estimate Total" id="btn-estimate" >
+   					<!--<button id="estimate-total">estimate total</button>!-->
+   					<input type="text" id="text-estimate" placeholder="$0.00">
+   				  </p>
+   				  <div id="results"></div>
+   				</div>
+   			</form>
+   		</section>
+   	</div>
+   </main>
+   <aside class="upcoming-events">
+         <h1>Upcoming events</h1>
+         <!-- <ul id="events">
+         	<li>may 23
+         	  <ul>
+         	  	<li>7:00 pm</li>
+         	  	<li>Happy hour in the lobby</li>
+         	  </ul>
+         	</li>
+         	<li>June 13
+         	  <ul>
+         	  	<li>12:00-3:00 pm</li>
+         	  	<li>National honor society</li>
+         	  </ul>
+         	</li>
+         	<li>July 4
+         	  <ul>
+         	  	<li>8:00 pm</li>
+         	  	<li>Champions match</li>
+         	  </ul>
+         	</li>
+         </ul> -->
+
+
+        <div class="events bgimage">
+        	<div class="calander">
+	     		<h2>may 23</h2>
+	     		<p>7:00 pm</p>
+	     		<p>Happy hour in the lobby</p>
+
+	     		<h2>June 13</h2>
+	     		<p>12:00-3:00 pm</p>
+	     		<p>National honor society</p>
+
+	     		<h2>July 4</h2>
+	     		<p>8:00 pm</p>
+	     		<p>Champions match</p>
+     	    </div>
+     	    <div id="clock">
+     	       <div class="label">now</div>
+     	       <div id="current-date"></div>
+     	       <div id="current-time"></div>
+     		
+     	    </div>
+        </div>
+     
+     	
+
+   </aside>
+   <footer>
+      <h2> here is our location</h2>
+      <p> bergman strase 5,Berlin</p>
+      <div id="map"></div>
+   </footer>
+   <script type="text/javascript" src="index.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYg1EgqhyecWvaN36fGi_7yq0XJT4wGss&callback=initMap"
+    async defer></script>
+</body>
+</html>
